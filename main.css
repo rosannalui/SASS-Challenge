@@ -1,0 +1,45 @@
+/* sass --watch main.scss 
+
+
+*/
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #FF4D4D;
+  background-color: #C8EDFF;
+  padding: 8em; }
+
+h1, #info {
+  font: Helvetica, sans-serif;
+  color: #004282;
+  font-size: 2em; }
+
+header {
+  color: white;
+  font-size: 4em;
+  text-align: center;
+  background-color: #99CCFF;
+  width: 52.08333%; }
+
+#info {
+  color: black;
+  padding: 2em; }
+
+#nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #2fbbff; }
+#nav li {
+  display: inline-block; }
+#nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none; }
+
+footer {
+  color: #ffe6e6;
+  background-color: white;
+  font-size: 50px; }
+
+/*# sourceMappingURL=main.css.map */

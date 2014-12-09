@@ -1,0 +1,64 @@
+/* sass --watch main.scss 
+
+
+*/
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #FF4D4D;
+$huge-font: 2em;
+$secondary-color: #99CCFF; 
+$third-color:#C8EDFF;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background-color:$third-color;
+  padding:$huge-font*4;
+}
+
+h1 { 
+	font: $font-stack;
+	color: #004282;
+	font-size: $huge-font;
+}
+
+header {
+	color:white;
+	font-size: 4em; 
+	text-align:center;
+	background-color: $secondary-color; 
+	width: 500px / 960px * 100%; 
+}
+
+#info {
+	color:black;
+	padding: $huge-font; 
+	@extend h1; 
+}
+
+#nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color:darken($third-color, 30%); 
+  }
+
+  li { 
+  display: inline-block; 
+  }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+footer {
+	 color: lighten($primary-color,30%);
+	 background-color: white; 
+	 font-size:50px; 
+}
+
