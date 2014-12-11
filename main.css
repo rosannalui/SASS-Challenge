@@ -1,0 +1,56 @@
+/* sass --watch main.scss */
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500);
+body {
+  background-color: #e4edf3;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  color: black; }
+
+header {
+  font-size: 48px;
+  text-align: center;
+  font-family: "Raleway", "Helvetica Neue";
+  background-color: #d9b1b1;
+  padding: 2em;
+  color: white; }
+
+#info {
+  position: absolute;
+  right: 60px;
+  width: 400px;
+  background-color: #f2e4e4;
+  top: 630px; }
+
+h1 {
+  left: 20px;
+  color: #417697; }
+
+h6 {
+  color: #d2e2ec; }
+
+#nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #79a8c5; }
+#nav li {
+  display: inline-block; }
+#nav a {
+  display: block;
+  color: white;
+  font-family: "Open";
+  padding: 7px 30px;
+  font-size: 20px;
+  text-decoration: none; }
+
+footer {
+  color: white;
+  padding: 1em;
+  text-align: center;
+  background-color: #d9b1b1; }
+
+/*# sourceMappingURL=main.css.map */
