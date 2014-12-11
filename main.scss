@@ -1,48 +1,63 @@
-/* sass --watch main.scss 
+/* sass --watch main.scss */
 
-
-*/
-@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500);
 
 $font-stack: Helvetica, sans-serif;
-$primary-color: #FF4D4D;
-$huge-font: 2em;
-$secondary-color: #99CCFF; 
-$third-color:#C8EDFF;
+$header-font-family:'Raleway'; 
+$secondary-font:'Open';
+$third-color:#c98e8e; 
+$primary-color: #c0d6e4;
+$color:white;  
+$font-size:16px;
+$bigger-size:20px;
+$padding:1em;  
 
 body {
-  font: 100% $font-stack;
-  color: $primary-color;
-  background-color:$third-color;
-  padding:$huge-font*4;
+  background-color:lighten($primary-color,10%);
+  font-size:$font-size;  
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    color:black; 
 }
 
-h1 { 
-	font: $font-stack;
-	color: #004282;
-	font-size: $huge-font;
-}
 
 header {
-	color:white;
-	font-size: 4em; 
-	text-align:center;
-	background-color: $secondary-color; 
-	width: 500px / 960px * 100%; 
+  font-size:$font-size*3; 
+  text-align: center; 
+  font-family: $header-font-family, 'Helvetica Neue'; 
+  background-color: lighten($third-color,10%); 
+  padding:$padding*2; 
+  color: $color; 
 }
 
 #info {
-	color:black;
-	padding: $huge-font; 
-	@extend h1; 
+    position: absolute;
+    right: 60px;
+    width: 400px;
+    background-color:lighten($third-color,25%);
+    top:630px; 
+}
+
+h1 {
+  $bigger-size:20px;
+  left:20px; 
+  color:darken($primary-color, 40%);  
+}
+
+h6{
+  color:lighten($primary-color, 5%); 
 }
 
 #nav {
+
   ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    background-color:darken($third-color, 30%); 
+    background-color:darken($primary-color, 20%); 
   }
 
   li { 
@@ -51,14 +66,17 @@ header {
 
   a {
     display: block;
-    padding: 6px 12px;
+    color:$color; 
+    font-family:$secondary-font; 
+    padding: 7px 30px;
+    font-size:$bigger-size; 
     text-decoration: none;
   }
 }
 
 footer {
-	 color: lighten($primary-color,30%);
-	 background-color: white; 
-	 font-size:50px; 
+  color:$color; 
+  padding:$padding; 
+  text-align:center; 
+  background-color: lighten($third-color,10%); 
 }
-
